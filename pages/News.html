@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="../css/Estilos.css">
+</head>
+<body>
+    <header id="header"> 
+        <div class="logo">
+            <a href="../index.html" target="_self">
+                <img src="../img/Logo2.jpg" alt="logo">
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li> <a class="navbarLink" href="./Libros.html" target="_self">Libros</a></li>
+                <li> <a class="navbarLink" href="./Juego.html" target="_self">Juegos</a></li>
+                <li> <a class="navbarLink" href="./Serie.html" target="_self">Serie</a></li>
+                <li> <a class="navbarLink" href="./News.html" target="_self">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="mainImagen">
+            <img src="../img/News.jpg" alt="">
+        </div>
+        <div class="mainFrase">
+            <h1>Recibe todas las noticias sobre el mundo de "The Witcher"</h1>
+        </div>
+    </main>
+
+    <section id="formulario">
+        <form action="enviar.php" method="" enctype="">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="ingrese su nombre">
+                <label for="mail">EMAIL</label>
+                <input type="email" id="mail" placeholder="ingrese su email" name="mail" required>
+            </div>
+            <div>
+                <input type="checkbox" name="opciones" id="aceptar"> ACEPTO TERMINOS Y CONDICIONES
+                <input type="checkbox" name="opciones" id="news"> RECIBIR NEWS
+            </div>
+        </form>
+            <div>
+                <input type="submit" value="Me apunto!">
+            </div>
+    </section>
+
+    <footer id="footer">
+        <div class="redes">
+            <a href="https://www.facebook.com/TheWitcherEnNetflix/?ref=page_internal" target="_blank">
+                <img src="../img/facebook-square-logo-24.png" alt="Facebook imagen">
+            </a>
+            <a href="https://www.instagram.com/witchernetflix/" target="_blank">
+                <img src="../img/instagram-logo-24.png" alt="instagram imagen">
+            </a>
+            <a href="https://twitter.com/witchernetflix" target="_blank">
+                <img src="../img/twitter-logo-24.png" alt="twitter imagen">
+            <a>  
+        </div>
+        <div class="copy">
+            <p>&copy; 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
