@@ -6,22 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juegos</title>
     <link rel="stylesheet" href="../css/Estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
     <header id="header"> 
-        <div class="logo">
-            <a href="../index.html" target="_self">
-                <img src="../img/Logo2.jpg" alt="logo">
-            </a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li> <a class="navbarLink" href="./Libros.html" target="_self">Libros</a></li>
-                <li> <a class="navbarLink" href="./Juego.html" target="_self">Juegos</a></li>
-                <li> <a class="navbarLink" href="./Serie.html" target="_self">Serie</a></li>
-                <li> <a class="navbarLink" href="./News.html" target="_self">News</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg" style="background-color: black;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../img/Logo2.jpg" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+                The Witcher
+              </a>
+            </div>
+          </nav>
+          <nav class="navbar navbar-expand-lg" style="background-color: black;">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="../pages/Libros.html">Libros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="../pages/Juego.html">Juegos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="../pages/Serie.html">Serie</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="../pages/News.html">News</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>    
     </header>
 
     <main id="main">
@@ -42,37 +61,40 @@
             <p class="descripcionHistoria">Basados en la saga de Geralt de Rivia, uno de los pocos brujos que quedan, asesinos de monstruos a sueldo con habilidades especiales. Los videojuegos cuentan las aventuras de Geralt a través de misiones que el jugador debe completar.</p>
         </div>
     </section>
-    
-    <section id="Videojuegos">
-        <div>
-            <p>2007</p>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/LMStRRVPt6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>The Witcher</iframe>
-        </div>
-        <div>
-            <p>2011</p>
+          </div>
+          <div class="carousel-item">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/7ajukUlRKdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>The Witcher 2: Assassins of Kings</iframe>
-        </div>
-        <div>
-            <p>2015</p>
+          </div>
+          <div class="carousel-item">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/tmNKXINYHns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>The Witcher 3: Wild Hunt</iframe>
-        </div>
-        <div>
-            <p>2016</p>
+          </div>
+          <div class="carousel-item">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/5yu7FVZOyAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Gwent: The Witcher Card Game</iframe>
-        </div>
-        <div>
-            <p>2018</p>
+          </div>
+          <div class="carousel-item">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/NrTo8ZtmZw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Thronebreaker: The Witcher Tales</iframe>
-        </div>
-        <div>
-            <p>2021</p>
+          </div>
+          <div class="carousel-item">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/rxmg7UNhXDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>The Witcher: Monster Slayer</iframe>
-        </div>
-        <div>
-            <p>2022</p>
+          </div>
+          <div class="carousel-item">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/3kmx9Wx1DeI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Gwent: Rogue Mage</iframe>
+          </div>
         </div>
-    </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
     <footer id="footer"> 
         <div class="redes">
@@ -90,5 +112,6 @@
             <p>&copy; 2022</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

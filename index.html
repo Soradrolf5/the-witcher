@@ -6,22 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Witcher</title>
     <link rel="stylesheet" href="./css/Estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
     <header id="header"> 
-        <div class="logo">   
-            <a href="./index.html" target="_self">
-                <img src="./img/Logo2.jpg" alt="logo">
-            </a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li> <a class="navbarLink" href="./pages/Libros.html" target="_self">Libros</a></li>
-                <li> <a class="navbarLink" href="./pages/Juego.html" target="_self">Juegos</a></li>
-                <li> <a class="navbarLink" href="./pages/Serie.html" target="_self">Serie</a></li>
-                <li> <a class="navbarLink" href="./pages/News.html" target="_self">News</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg" style="background-color: black;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">
+                <img src="./img/Logo2.jpg" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+                The Witcher
+              </a>
+            </div>
+          </nav>
+          <nav class="navbar navbar-expand-lg" style="background-color: black;">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="./pages/Libros.html">Libros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="./pages/Juego.html">Juegos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="./pages/Serie.html">Serie</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="./pages/News.html">News</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>    
     </header>
 
     <main id="home">
@@ -48,5 +67,6 @@
             <p>&copy; 2022</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

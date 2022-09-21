@@ -10,42 +10,15 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 200px 1fr 60px;
 }
-#header {
-    background-color: rgb(2, 2, 2);
-    display: flex;
-    padding: 15px;
+.navbar {
+    height: 100px;
+    font-size: 25px;
 }
-
-.logo img{
-    width: 30%;
-    height: auto;
-    justify-content: flex-start;
+.nav-item {
+    color: blanchedalmond;
 }
-.menu {
-    padding-left: 10px;
-    margin-top: 90px;
-    list-style: none;
-    display: flex; 
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 20px;
-
-}
-.menu ul li {
-    display: inline-block;
-}
-.navbarLink {
-    display: inline;
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    text-decoration: none;
-}
-.navbarLink:hover {
-    transform: rotate(45deg);
+.navbar:hover {
     cursor: pointer;
-    border-radius: 5px;
-    background-color: white;
-    color: rgb(10, 8, 8);
 }
 .mainFrase {
     display: flex;
@@ -57,6 +30,24 @@ body {
     margin-bottom: 10px;
     font-size: 28px;
 }
+@keyframes frase-main {
+    0% {
+        background-color: grey;
+        color: white;
+    }
+    50% {
+        background-color: white;
+        color: black;
+    }
+    100% {
+        background-color: black;
+        color: white;
+    }
+}
+.mainFrase {
+    animation: frase-main 2s linear 1s infinite;
+}
+
 .mainImagen img {
     width: 100%;
     height: auto;
@@ -96,12 +87,13 @@ body {
     padding: 20px 30px;
 }
 .sinopsisSerie {
-    margin: 10px 20px;
+    margin: 10px 20px 30px 20px;
     font-size: 20px;
 }
 #elenco {
     display: flex;
-    padding: 120px 30px 30px 30px ;
+    padding: 200px 30px 30px 30px;
+    margin-top: 100px;
     flex-direction: row;
 }
 .tituloElenco {
@@ -128,17 +120,12 @@ body {
     gap: 30px;
     font-size: 15px;
 }
-iframe {
+#temporadas iframe {
     width: 350px;
 }
 
 /*NEWS*/
-#formulario {
-    text-align: center;
-    padding: 70px 20px 20px 20px;
-    margin: 10px 20px;
-    font-size: 30px;
-}
+
 /*LIBROS*/
 #libro {
     display: flex;
@@ -146,34 +133,34 @@ iframe {
     flex-direction: row-reverse;
 }
 #libro .descripcionLibro p {
-    margin: 120px 20px;
+    margin: 0px 20px;
     font-size: 20px;
     text-align: left;
 }
 #libro .imagenAutor img {
+    margin: 0px 10px;
     width: 100%;
     height: auto;
     border: 1px solid black;
 }
-#saga {
-    display: flex;
-    padding: 220px 30px 30px 30px;
-    flex-direction: row;
+.container {
+    padding: 200px 30px 30px 30px;
+
 }
-#saga .tituloLibro {
-    text-align: left;
+.tituloLibro {
+    margin: 50px 30px 0px 30px;
     font-size: 30px;
 }
-#saga .listaLibro {
+.listaLibro {
     font-size: 25px;
-    margin: 30px 30px;
+    margin: 40px 30px;
     width: 400px;
 }
-#saga .imagenLibro img {
-    width: 70%;
+.col-lg-6 img {
+    width: 100%;
     height: auto;
-    float: right;
 }
+
 /*JUEGO*/
 #juego {
     padding: 10px 20px;
@@ -191,30 +178,16 @@ iframe {
     margin: 10px 20px;
     font-size: 18px;
 }
-#Videojuegos {
-    padding: 150px 30px 30px 30px;
+#carouselExampleControls{
+    padding: 300px 30px 30px 30px;
     margin: 10px 20px;
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
+}
+.carousel-item iframe{
+    width: 100%;
 }
 
 /*MEDIA*/
 
-@media (max-width: 768px) {
-    .navbarLink {
-        font-size: 20px;
-    }
-}
-@media (max-width: 768px) {
-    .menu {
-        padding-left: 10px;
-        margin-top: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-}
 @media (max-width: 768px) {
     .mainFrase {
         padding: 10px;
@@ -222,6 +195,8 @@ iframe {
         font-size: 15px;
     }
 }
+
+
 /*MEDIA home*/
 @media (max-width: 768px) {
     .descripcionHome {
@@ -233,9 +208,9 @@ iframe {
     }
 }
 /*MEDIA libros*/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #libro .descripcionLibro p {
-        margin: 10px 20px;
+        margin: 10px 20px 0px 20px;
         font-size: 15px;
     }
 }
@@ -244,18 +219,34 @@ iframe {
         padding: 10px 10px ;
     }
 }
+
+/*MEDIA juego*/
 @media (max-width: 768px) {
-    #saga .listaLibro {
-        font-size: 15px;
-        width: 300px;
+    #carouselExampleControls{
+        padding: 500px 30px 30px 30px;
+        margin: 10px 20px;
     }
 }
+
 /*MEDIA serie*/
 @media (max-width: 768px) {
-    #elenco {
-        padding: 130px 30px 30px 30px ;
+    #temporadas iframe {
+        width: 150px;
     }
 }
+@media (max-width: 1024px) {
+    #elenco {
+        display: flex;
+        margin-top: 200px;
+        flex-direction: row;
+    }
+}
+@media (max-width: 1024px) {
+    .imagenElenco img {
+    display:none;
+    }
+}
+
 /*MEDIA news*/
 @media (max-width: 768px) {
     #formulario {
