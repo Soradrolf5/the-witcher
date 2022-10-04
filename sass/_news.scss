@@ -1,0 +1,23 @@
+
+#bodyNews {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr 300px 60px;
+    .formulario {
+        padding: 20px 30px;
+    }
+}
+@mixin btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.btnReset {
+    @include btn;
+    background-color: black;
+    color: white;
+    }

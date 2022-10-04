@@ -1,0 +1,25 @@
+#juego {
+    padding: 10px 20px;
+    .descripcionJuego {
+        margin: 10px 20px;
+        font-size: 20px;
+    }
+    .historiaJuego {
+        text-align: left;
+        margin: 10px 20px;
+        font-size: 25px;
+    }
+    .descripcionHistoria {
+        margin: 10px 20px;
+        font-size: 18px;
+    }
+}
+
+
+#carouselExampleControls{
+    padding: 300px 30px 30px 30px;
+    margin: 10px 20px;
+    .carousel-item iframe{
+        width: 100%;
+    }
+}

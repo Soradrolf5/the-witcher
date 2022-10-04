@@ -1,0 +1,59 @@
+@media (max-width: $tablet) {
+    .mainFrase {
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+}
+
+
+/*MEDIA home*/
+@media (max-width: $tablet) {
+    .descripcionHome {
+        padding: 20px 20px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+}
+/*MEDIA libros*/
+@media (max-width: $mobile) {
+    #libro .descripcionLibro p {
+        margin: 10px 20px 0px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width: $tablet) {
+    #libro {
+        padding: 10px 10px ;
+    }
+}
+
+/*MEDIA juego*/
+@media (max-width: $tablet) {
+    #carouselExampleControls{
+        padding: 500px 30px 30px 30px;
+        margin: 10px 20px;
+    }
+}
+
+/*MEDIA serie*/
+@media (max-width: $tablet) {
+    #temporadas iframe {
+        width: 350px;
+    }
+}
+@media (max-width: $mobile) {
+    #elenco {
+        display: flex;
+        margin-top: 200px;
+        flex-direction: row;
+    }
+}
+@media (max-width: $mobile) {
+    .imagenElenco img {
+    display:none;
+    }
+}
+

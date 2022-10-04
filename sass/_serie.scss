@@ -1,0 +1,43 @@
+#serie {
+    padding: 20px 30px;
+    .sinopsisSerie {
+        margin: 10px 20px 30px 20px;
+        font-size: 20px;
+    }
+}
+
+#elenco {
+    display: flex;
+    padding: 200px 30px 30px 30px;
+    margin-top: 100px;
+    flex-direction: row;
+    .tituloElenco {
+        text-align: left;
+        font-size: 30px;
+    }
+    .listaElenco {
+        margin: 10px 20px;
+        font-size: 18px;
+        text-align: left;
+    }
+    .imagenElenco img {
+        width: 100%;
+        height: auto;
+        margin: 10px 20px;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+
+#temporadas {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 15px;
+    #temporadas iframe {
+        width: 350px;
+    }
+}
+

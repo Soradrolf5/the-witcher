@@ -1,0 +1,86 @@
+$mobile: 578px;
+$tablet: 768px;
+$desktop: 1024px;
+
+@import "home";
+@import "serie";
+@import "libro";
+@import "juego";
+@import "media";
+@import "news";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*GLOBAL*/
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr 60px;
+    .navbar-dark {
+        height: 100px;
+        font-size: 25px;
+        &:hover {
+            cursor: pointer;
+        }
+        .navbar-nav {
+            padding: 10px 20px;
+            justify-content: space-between;
+            gap: 20px;
+            .nav-item {
+                margin: 0px 20px;
+            }
+        }
+    }
+    .mainFrase {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 28px;
+        animation: frase-main 2s linear 1s infinite;
+    }
+    .mainImagen img {
+        width: 100%;
+        height: auto;
+        align-content: center;
+    }
+    #footer {
+        padding: 10px;
+        margin-bottom: 10px;
+        .redes a {
+            text-decoration: none;
+        }
+        .copy {
+            display: inline-block;
+            float: right;
+        }
+    }
+}
+
+@keyframes frase-main {
+    0% {
+        background-color: grey;
+        color: white;
+    }
+    50% {
+        background-color: white;
+        color: black;
+    }
+    100% {
+        background-color: black;
+        color: white;
+    }
+}
+
+
+
+
+
