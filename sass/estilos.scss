@@ -21,19 +21,9 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px 1fr 60px;
-    .navbar-dark {
-        height: 110px;
-        font-size: 25px;
+    .navbar {
         &:hover {
             cursor: pointer;
-        }
-        .navbar-nav {
-            padding: 10px 20px;
-            justify-content: space-between;
-            gap: 20px;
-            .nav-item {
-                margin: 0px 20px;
-            }
         }
     }
     .mainFrase {
