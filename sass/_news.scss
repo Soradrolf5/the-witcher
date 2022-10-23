@@ -7,17 +7,18 @@
         padding: 20px 30px;
     }
 }
+
 @mixin btn {
     display: inline-block;
-    padding: 50px 20px;
+    padding: 10px 20px;
+    margin: 10px 30px;
     font-family: sans-serif;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    border-radius: 5px;
     text-decoration: none;
-    border: 1px solid black;
-    border-radius: 25px;
 }
 
 .btnReset {
     @include btn;
-    background-color: black;
-    color: white;
     }
